@@ -7,6 +7,7 @@
     <title>Email &ndash; Layout Examples &ndash; Pure</title>
     
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     
     
     
@@ -48,16 +49,16 @@
     </div>
 
     <div id="list" class="pure-u-1">
-        <div class="email-item email-item-selected pure-g">
+        <div v-on:click="clickEmail1" id="email1" class="email-item email-item-selected pure-g">
             <div class="pure-u">
                 <img width="64" height="64" alt="Tilo Mitra&#x27;s avatar" class="email-avatar" src="img/common/tilo-avatar.png">
             </div>
 
             <div class="pure-u-3-4">
                 <h5 class="email-name" id="name1">{{name1}}</h5>
-                <h4 class="email-subject">Hello from Toronto</h4>
-                <p class="email-desc" id="message">
-                  {{ message }}
+                <h4 class="email-subject" id="subject1">{{subject1}}</h4>
+                <p class="email-desc" id="message1">
+                  {{ message1 }}
                 </p>
             </div>
         </div>
@@ -69,9 +70,9 @@
 
             <div class="pure-u-3-4">
                 <h5 class="email-name" id="name2">{{name2}}</h5>
-                <h4 class="email-subject">Re: Pull Requests</h4>
-                <p class="email-desc">
-                    Hey, I had some feedback for pull request #51. We should center the menu so it looks better on mobile.
+                <h4 class="email-subject" id="subject2">{{subject2}}</h4>
+                <p class="email-desc" id="message2">
+                  {{message2}}
                 </p>
             </div>
         </div>
@@ -83,9 +84,9 @@
 
             <div class="pure-u-3-4">
                 <h5 class="email-name" id="name3">{{name3}}</h5>
-                <h4 class="email-subject">You have 5 bugs assigned to you</h4>
-                <p class="email-desc">
-                    Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla.
+                <h4 class="email-subject" id="subject3">{{subject3}}</h4>
+                <p class="email-desc" id="message3">
+                  {{message3}}
                 </p>
             </div>
         </div>
@@ -97,9 +98,9 @@
 
             <div class="pure-u-3-4">
                 <h5 class="email-name" id="name4">{{name4}}</h5>
-                <h4 class="email-subject">Re: Design Language</h4>
-                <p class="email-desc">
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                <h4 class="email-subject" id="subject4">{{subject4}}</h4>
+                <p class="email-desc" id="message4">
+                  {{message4}}
                 </p>
             </div>
         </div>
@@ -111,9 +112,9 @@
 
             <div class="pure-u-3-4">
                 <h5 class="email-name" id="name5">{{name5}}</h5>
-                <h4 class="email-subject">YUI Blog Updates?</h4>
-                <p class="email-desc">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                <h4 class="email-subject" id="subject5">{{subject5}}</h4>
+                <p class="email-desc" id="message5">
+                  {{message5}}
                 </p>
             </div>
         </div>
@@ -125,9 +126,9 @@
 
             <div class="pure-u-3-4">
                 <h5 class="email-name" id="name6">{{name6}}</h5>
-                <h4 class="email-subject">How to protect your finances from winter storms</h4>
-                <p class="email-desc">
-                    Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris.
+                <h4 class="email-subject" id="subject6">{{subject6}}</h4>
+                <p class="email-desc" id="message6">
+                  {{message6}}
                 </p>
             </div>
         </div>
@@ -139,9 +140,9 @@
 
             <div class="pure-u-3-4">
                 <h5 class="email-name" id="name7">{{name7}}</h5>
-                <h4 class="email-subject">Summary for April 3rd, 2012</h4>
-                <p class="email-desc">
-                    We found 10 news articles that you may like.
+                <h4 class="email-subject" id="subject7">{{subject7}}</h4>
+                <p class="email-desc" id="message7">
+                    {{message7}}
                 </p>
             </div>
         </div>

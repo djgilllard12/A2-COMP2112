@@ -60,3 +60,98 @@ var name7 = new Vue({
 });
 
 // subject lines
+var subject1 = new Vue({
+  el: '#subject1',
+  data: {
+    subject1: emails[0].subject  
+  }
+});
+var subject2 = new Vue({
+  el: '#subject2',
+  data: {
+    subject2: emails[1].subject  
+  }
+});
+var subject3 = new Vue({
+  el: '#subject3',
+  data: {
+    subject3: emails[2].subject  
+  }
+});
+var subject4 = new Vue({
+  el: '#subject4',
+  data: {
+    subject4: emails[3].subject  
+  }
+});
+var subject5 = new Vue({
+  el: '#subject5',
+  data: {
+    subject5: emails[4].subject  
+  }
+});
+var subject6 = new Vue({
+  el: '#subject6',
+  data: {
+    subject6: emails[5].subject  
+  }
+});
+var subject7 = new Vue({
+  el: '#subject7',
+  data: {
+    subject7: emails[6].subject  
+  }
+});
+// messages
+var message1 = new Vue({
+  el: '#message1',
+  data: {
+    message1: emails[0].body  
+  }
+});
+var message2 = new Vue({
+  el: '#message2',
+  data: {
+    message2: emails[1].body  
+  }
+});
+var message3 = new Vue({
+  el: '#message3',
+  data: {
+    message3: emails[2].body  
+  }
+});
+var message4 = new Vue({
+  el: '#message4',
+  data: {
+    message4: emails[3].body  
+  }
+});
+var message5 = new Vue({
+  el: '#message5',
+  data: {
+    message5: emails[4].body  
+  }
+});
+var message6 = new Vue({
+  el: '#message6',
+  data: {
+    message6: emails[5].body  
+  }
+});
+var message7 = new Vue({
+  el: '#message7',
+  data: {
+    message7: emails[6].body  
+  }
+});
+// adding css classes
+var email1 = new Vue({
+  el: '#email1',
+  method: {
+    clickEmail1: function () {
+      var style1 = document.getElementById('email1')
+      style1.classList.add(hoverStyle);
+    }
+  }
+})
